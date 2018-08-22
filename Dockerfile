@@ -16,6 +16,7 @@ WORKDIR /src/github.com/flike/kingshard
 RUN ls -alh
 RUN source ./dev.sh
 RUN export GOPATH=/
+RUN export
 RUN make
 
 CMD ["./bin/kingshard", "-config=etc/ks.yaml"]
