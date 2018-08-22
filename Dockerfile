@@ -15,7 +15,7 @@ RUN git clone https://github.com/flike/kingshard.git $GOPATH/src/github.com/flik
 WORKDIR /src/github.com/flike/kingshard
 RUN ls -alh
 RUN source ./dev.sh
-RUN export GOPATH=/
+ENV GOPATH /
 RUN export
 RUN make
 
