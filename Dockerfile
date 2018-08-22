@@ -12,7 +12,7 @@ RUN apk upgrade --no-cache && \
     rm -rf /var/cache/apk/*
 
 RUN git clone https://github.com/flike/kingshard.git $GOPATH/src/github.com/flike/kingshard
-RUN cd /src/github.com/flike/kingshard
+WORKDIR /src/github.com/flike/kingshard
 RUN ls -alh
 RUN source ./dev.sh
 RUN export GOPATH=/
