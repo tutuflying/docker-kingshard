@@ -18,5 +18,7 @@ RUN source ./dev.sh
 ENV GOPATH /
 RUN export
 RUN make
+EXPOSE 9696
+EXPOSE 9797
 
 CMD ["./bin/kingshard", "-config=etc/ks.yaml"]
