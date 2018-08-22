@@ -13,7 +13,7 @@ RUN apk upgrade --no-cache && \
 
 RUN git clone https://github.com/flike/kingshard.git $GOPATH/src/github.com/flike/kingshard
 RUN cd src/github.com/flike/kingshard
-RUN source ./dev.sh
-RUN make
+# RUN source ./dev.sh
+# RUN make
 
-CMD ["./bin/kingshard", "-config=etc/ks.yaml"]
+# CMD ["./bin/kingshard", "-config=etc/ks.yaml"]
